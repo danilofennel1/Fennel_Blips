@@ -74,7 +74,7 @@ AddEventHandler('onServerResourceStart', function(resourceName)
     local Table = json.decode(File)
     for index, value in pairs(Table) do
         print('[FENNEL BLIPS] [INFO] Salvataggio Impostazioni, Applicando...')
-        TriggerEvent('fennel_setblip_cl', value.idblip, value.coloreblip, value.nomeblip, value.scaleblip, value.pos)
+        TriggerEvent('fennel_setblip_cl', value.idblip, value.coloreblip, value.nomeblip, value.scaleblip, value.pos.x, value.pos.y, value.pos.z)
     end
 end)
 
